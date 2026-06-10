@@ -48,7 +48,7 @@ The system follows a layered, agent-driven design:
 
 ### 🛠️ Technologies Used
 - Python 3.11
-- LangChain + LangGraph → AI agent framework
+- LangChain + LangGraph 
 - Groq (Llama 3.1 8B Instant) → Fast LLM inference
 - ReportLab → PDF generation
 - Feedparser → RSS parsing
