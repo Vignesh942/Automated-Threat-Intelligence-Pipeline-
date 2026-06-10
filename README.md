@@ -33,6 +33,12 @@ The system helps security teams and analysts stay informed about emerging threat
 5. Store intelligence records
 6. Generate a structured PDF report
 
+
+## System architecture overview diagram
+<img width="1842" height="854" alt="System_architecture_Threat_Intelligence_Pipeline" src="https://github.com/user-attachments/assets/6f2a890c-24f1-424d-bc20-2488cbbd21d2" />
+
+
+
 ## Technologies Used
 
 - Python 3.11
