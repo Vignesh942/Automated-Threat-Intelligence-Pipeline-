@@ -1,8 +1,8 @@
-# Cyber Threat Intelligence AI Agent
+# Automated Threat Intelligence pipeline
 
-An **autonomous AI-powered Cyber Threat Intelligence (CTI) Agent** that collects, correlates, scores, and reports cybersecurity threats from multiple sources and generates professional PDF reports.
+An **Automated Threat Intelligence pipeline** that collects, correlates, scores, and reports cybersecurity threats from multiple sources and generates professional PDF reports.
 
-Built using **LangGraph + Groq LLM**, this project evolved from a simple automation script into a **AI agent** capable of decision-making, reasoning, and structured output generation.
+Built using **LangGraph + Groq LLM**, this project evolved from a simple automation script into a **A fully autmoated Threat collecting pipeline** capable of decision-making, reasoning, and structured output generation.
 
 ---
 
