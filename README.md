@@ -1,84 +1,79 @@
-# Automated Threat Intelligence pipeline
+# Automated Threat Intelligence Pipeline
 
-An **Automated Threat Intelligence pipeline** that collects, correlates, scores, and reports cybersecurity threats from multiple sources and generates professional PDF reports.
+An automated threat intelligence pipeline that collects cybersecurity threat data from multiple sources, correlates related events and vulnerabilities, prioritizes threats based on severity, and generates professional PDF reports.
 
-Built using **LangGraph + Groq LLM**, this project evolved from a simple automation script into a **A fully autmoated Threat collecting pipeline** capable of decision-making, reasoning, and structured output generation.
+The project aggregates information from security news feeds, blogs, and CVE databases to provide a consolidated view of emerging threats. It helps security analysts quickly identify high-priority risks and actionable intelligence without manually reviewing multiple sources.
 
----
+## Features
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![LangGraph](https://img.shields.io/badge/LangGraph-Agentic-blue)
-![Groq](https://img.shields.io/badge/Groq-LLM-green)
+- Collects threat intelligence from multiple sources:
+  - Security News APIs
+  - Security Blog RSS Feeds
+  - NVD CVE Database
 
----
+- Correlates reported incidents with known CVEs
 
-## ✨ Features
+- Calculates threat scores using:
+  - CVSS severity
+  - Threat-related keywords
+  - Source intelligence
 
+- Maintains historical intelligence records using JSON-based storage
 
-- 🔍 Real-time data collection from:
-  - News API  
-  - Security Blogs (RSS)  
-  - NVD CVE Database  
-- 🔗 Intelligent **CVE correlation** with real-world incidents  
-- 📊 Dynamic **threat scoring** based on severity and keywords  
-- 🧠 Persistent **JSON memory** for historical tracking  
-- 📄 Automatic generation of **professional PDF reports**  
-- ⚙️ Built as a **LangGraph-based AI Agent** with decision logic  
-- 🧩 Modular and extensible architecture  
+- Generates structured threat intelligence reports in PDF format
 
----
+- Modular architecture for easy integration of additional data sources
 
-## 🏗️ System Architecture
+## System Architecture
 
-The system follows a layered, agent-driven design:
+### Data Collection Layer
+Retrieves threat intelligence data from news feeds, security blogs, and vulnerability databases.
 
-<img width="1041" height="262" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/4792f9e4-d022-41dd-a1d9-046137251aef" />
+### Processing Layer
+Normalizes collected data, correlates related threats and CVEs, and performs threat prioritization.
 
+### Intelligence Storage Layer
+Stores processed intelligence and historical records for future analysis.
 
-### Components:
+### Report Generation Layer
+Creates structured threat intelligence reports containing summaries, findings, and recommendations.
 
-- **Data Collection Layer** → Fetches news, blogs, and CVEs  
-- **AI Agent Core** → Controls workflow using state and decision logic  
-- **Processing Layer** → Correlation and threat scoring  
-- **Memory Layer** → Stores historical intelligence in JSON  
-- **LLM Layer** → Generates structured threat reports  
-- **Output Layer** → Converts reports into PDF  
+### Output Layer
+Exports finalized reports as professional PDF documents.
 
----
+## Technologies Used
 
-### 🛠️ Technologies Used
 - Python 3.11
-- LangChain + LangGraph 
-- Groq (Llama 3.1 8B Instant) → Fast LLM inference
-- ReportLab → PDF generation
-- Feedparser → RSS parsing
-- Requests → API calls
+- LangGraph
+- LangChain
+- Groq (Llama 3.1 8B Instant)
+- Requests
+- Feedparser
+- ReportLab
 
+## Sample Report Contents
 
-### 📊Sample Output
-The agent generates structured PDF reports with:
+Each generated report includes:
 
 - Executive Summary
-- Top Prioritized Threats (titles, descriptions, scores, CVEs)
-- Key Insights
-- Actionable Recommendations
+- Top Prioritized Threats
+- Related CVEs
+- Threat Scores
+- Key Findings
+- Security Recommendations
 
-### Demo: 
+## Use Cases
 
-https://github.com/user-attachments/assets/d7c43da8-bde6-42a0-b356-ff22126368e1
+- Threat Intelligence Monitoring
+- Security Operations Support
+- Vulnerability Awareness
+- Weekly Security Reporting
+- Cyber Threat Research
 
+## Future Enhancements
 
-https://github.com/user-attachments/assets/0dd5f84c-462f-4d3f-9e89-2e665f305e13
-
-
-
-
-
-
-
-
-
-
-### 📄 License
-This project is licensed under the MIT License.
-
+- Additional threat intelligence feeds
+- Threat actor attribution
+- IOC extraction and enrichment
+- Threat trend visualization dashboard
+- SIEM integration
