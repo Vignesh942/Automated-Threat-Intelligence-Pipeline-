@@ -1,79 +1,68 @@
-# Automated Threat Intelligence Pipeline
+# Cyber Threat Monitoring and Prioritization Pipeline
 
-An automated threat intelligence pipeline that collects cybersecurity threat data from multiple sources, correlates related events and vulnerabilities, prioritizes threats based on severity, and generates professional PDF reports.
+A cybersecurity intelligence pipeline that collects threat-related information from security news sources, blogs, and vulnerability databases, correlates relevant CVEs, prioritizes threats based on severity, and generates professional PDF reports.
 
-The project aggregates information from security news feeds, blogs, and CVE databases to provide a consolidated view of emerging threats. It helps security analysts quickly identify high-priority risks and actionable intelligence without manually reviewing multiple sources.
+The system helps security teams and analysts stay informed about emerging threats by automatically gathering intelligence from multiple sources and presenting the most important findings in a structured report.
 
 ## Features
 
-- Collects threat intelligence from multiple sources:
+- Automated collection of threat intelligence from:
   - Security News APIs
   - Security Blog RSS Feeds
   - NVD CVE Database
 
-- Correlates reported incidents with known CVEs
+- Correlation of reported incidents with known CVEs
 
-- Calculates threat scores using:
-  - CVSS severity
+- Threat prioritization using:
+  - CVSS severity scores
   - Threat-related keywords
-  - Source intelligence
+  - Vulnerability impact indicators
 
-- Maintains historical intelligence records using JSON-based storage
+- Historical intelligence tracking using JSON storage
 
-- Generates structured threat intelligence reports in PDF format
+- Automated PDF report generation
 
-- Modular architecture for easy integration of additional data sources
+- Modular architecture for adding new intelligence sources
 
-## System Architecture
+## Workflow
 
-### Data Collection Layer
-Retrieves threat intelligence data from news feeds, security blogs, and vulnerability databases.
-
-### Processing Layer
-Normalizes collected data, correlates related threats and CVEs, and performs threat prioritization.
-
-### Intelligence Storage Layer
-Stores processed intelligence and historical records for future analysis.
-
-### Report Generation Layer
-Creates structured threat intelligence reports containing summaries, findings, and recommendations.
-
-### Output Layer
-Exports finalized reports as professional PDF documents.
+1. Collect cybersecurity news and threat reports
+2. Retrieve relevant CVE information from NVD
+3. Correlate vulnerabilities with reported incidents
+4. Calculate threat priority scores
+5. Store intelligence records
+6. Generate a structured PDF report
 
 ## Technologies Used
 
 - Python 3.11
-- LangGraph
 - LangChain
 - Groq (Llama 3.1 8B Instant)
 - Requests
 - Feedparser
 - ReportLab
 
-## Sample Report Contents
-
-Each generated report includes:
+## Generated Report Includes
 
 - Executive Summary
 - Top Prioritized Threats
 - Related CVEs
-- Threat Scores
+- Threat Severity Scores
 - Key Findings
-- Security Recommendations
+- Recommended Actions
 
 ## Use Cases
 
-- Threat Intelligence Monitoring
-- Security Operations Support
+- Cyber Threat Monitoring
 - Vulnerability Awareness
+- Threat Intelligence Research
 - Weekly Security Reporting
-- Cyber Threat Research
+- Security Operations Support
 
-## Future Enhancements
+## Future Improvements
 
-- Additional threat intelligence feeds
-- Threat actor attribution
-- IOC extraction and enrichment
-- Threat trend visualization dashboard
+- IOC extraction
+- Threat actor mapping
+- Threat trend analysis
+- Dashboard visualization
 - SIEM integration
